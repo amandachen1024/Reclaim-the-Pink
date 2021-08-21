@@ -1,5 +1,5 @@
-const averagePrices = {"Shampoo": 4.13, "Conditioner": 4.12}
-const qualityMutipliers = {"Extremely-Below": 2.0, "Below": 1.5, "Average": 1.0} 
+const averagePrices = {"Shampoo": 10, "Conditioner": 10, "Razor": 10, "Soap": 10};
+const qualityMutipliers = {"Extremely-Below": 2.0, "Below": 1.5, "Average": 1.0, "Above": 0.5, "Extremely-Above": 0.25};
 
 let productType = "";
 let quality = "";
