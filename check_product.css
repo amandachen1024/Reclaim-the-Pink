@@ -1,0 +1,203 @@
+.root{
+    --black: #322F2F;
+}
+
+body{
+    font-family: 'Saira Condensed', sans-serif;
+    background-color: #E4AEAE;
+    color: white;
+}
+
+
+.menu-bar{
+    background-color: #322F2F;
+    border: black;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    
+}
+
+.logo{
+    margin-left: 17px;
+    margin-top: 25px;
+}
+.menu-container{
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    margin-left: 60px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.page-header{
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 113px;
+    margin-top: 50px;
+    margin-left: 200px;
+    
+}
+
+.sub-header{
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-left: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #322F2F;
+    color: white;
+}
+
+.type{
+    display: inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
+
+.product-types{
+    margin-left: 15px;
+    
+}
+
+.product-type{
+    background-color: #322F2F;
+    color: white;
+}
+
+.rate{
+    display: inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
+
+.quality-types{
+    margin-left: 15px;
+}
+
+.quality-type{
+    background-color: #322F2F;
+    color: white;
+}
+
+.price{
+    display:inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
+
+#product-price{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+input{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: auto;
+    text-align: center;
+}
+
+.average{
+    display:inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
+
+#average-price{
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.markup{
+    display:inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
+
+#markup-price{
+    margin-left: 15px;
+}
+
+.pink-tax{
+    display:inline-flex;
+    margin-left: 200px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: auto;
+    text-align: center;
+}
