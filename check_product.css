@@ -91,9 +91,11 @@ button{
     font-size: 24px;
     line-height: auto;
     text-align: center;
-    border-radius: 10px;
-    background-color: #322F2F;
+    border-radius: 5px;
+    background-color: #7c7676;
     color: white;
+    border: none;
+    
 }
 
 .type{
@@ -113,8 +115,16 @@ button{
 }
 
 .product-type{
-    background-color: #322F2F;
+    background-color: #7c7676;
     color: white;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.quantity{
+    font-size: 10px;
+    color:#dad2d2;
+    margin-top: 2px;
 }
 
 .rate{
@@ -129,12 +139,14 @@ button{
 }
 
 .quality-types{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .quality-type{
-    background-color: #322F2F;
+    background-color: #7c7676;
     color: white;
+    padding: 10px;
+    margin-left: 25px;
 }
 
 .price{
@@ -149,8 +161,8 @@ button{
 }
 
 #product-price{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 input{
     font-style: normal;
@@ -158,6 +170,8 @@ input{
     font-size: 24px;
     line-height: auto;
     text-align: center;
+    border-radius: 5px;
+    border: none;
 }
 
 .average{
@@ -193,11 +207,12 @@ input{
 
 .pink-tax{
     display:inline-flex;
-    margin-left: 200px;
-    padding-left: 50px;
+    margin-left: 250px;
+    margin-right: 50px;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 36px;
     line-height: auto;
     text-align: center;
+    color: #FF5190;
 }

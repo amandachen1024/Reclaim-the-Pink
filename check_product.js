@@ -16,7 +16,7 @@ function getProductType(btn){
     let numChoices = document.getElementsByClassName("product-type").length;
     for (let i = 0; i < numChoices; i++)
     {
-        document.getElementsByClassName("product-type")[i].style.backgroundColor= "#322F2F";
+        document.getElementsByClassName("product-type")[i].style.backgroundColor= "#7c7676";
     }
     productType = btn.id;
     document.getElementById(productType).style.backgroundColor="#FF5190";
@@ -26,7 +26,7 @@ function getQuality(btn){
     let numChoices = document.getElementsByClassName("quality-type").length;
     for (let i = 0; i < numChoices; i++)
     {
-        document.getElementsByClassName("quality-type")[i].style.backgroundColor="#322F2F";
+        document.getElementsByClassName("quality-type")[i].style.backgroundColor="#7c7676";
     }
     quality = btn.id;
     document.getElementById(quality).style.backgroundColor="#FF5190";
