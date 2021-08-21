@@ -4,12 +4,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="check_product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     <script src="check_product.js"></script>
 
     <title>Check Your Product</title>
 </head>
 <body>
-    <h1>Check Your Product</h1>
+    <div class="menu-bar">
+        <header>
+            <div class="menu-container">
+                <a href="index.html"><img src=ReclaimThePink.png alt="logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="check_product.html">CHECK</a></li>
+                        <li><a href="shop.html">LOCAL</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <h1 class="page-header">Check Your Product</h1>
+    <p class="sub-header">Compare the prices of your products to the average prices in Canada, letting you know whether or not your product is affected by the Pink Tax.</p>
     <div class="type">
         What type of product are you buying? 
         <div class="product-types">
@@ -17,29 +36,35 @@
             <button class="product-type" id="Conditioner" onclick="getProductType(this)">Conditioner</button>
             <button class="product-type" id="Razor" onclick="getProductType(this)">Razor</button>
             <button class="product-type" id="Soap" onclick="getProductType(this)">Soap</button>
+            <button class="product-type" id="Deodorant" onclick="getProductType(this)">Deodorant</button>
         </div>
     </div>
+    <p></p>
     <div class="rate">
         Rate the price of your product:
         <div class="quality-types">
-            <button class="quality-type" id="Extremely-Below" onclick="getQuality(this)">Extremely Below Average</button>
-            <button class="quality-type" id="Below" onclick="getQuality(this)">Below Average</button>
+            <button class="quality-type" id="Extremely-Below" onclick="getQuality(this)">Very Low</button>
+            <button class="quality-type" id="Below" onclick="getQuality(this)">Low</button>
             <button class="quality-type" id="Average" onclick="getQuality(this)">Average</button>
-            <button class="quality-type" id="Above" onclick="getQuality(this)">Above Average</button>
-            <button class="quality-type" id="Extremely-Above" onclick="getQuality(this)">Extremely Above Average</button>
+            <button class="quality-type" id="Above" onclick="getQuality(this)">High</button>
+            <button class="quality-type" id="Extremely-Above" onclick="getQuality(this)">Very High</button>
         </div>
     </div>
+    <p></p>
     <div class="price">
         What is the price of your product?
-        <input id ="product-price" type=number placeholder="Enter your price here">
+        <input id ="product-price" type=float placeholder="Enter your price here">
         <button id="submit" onclick="checkProduct()">Submit</button>
     </div>
+    <p></p>
     <div class=average>
         The average price is: <div id=average-price></div>
     </div>
+    <p></p>
     <div class=markup>
         The markup from average is: <div id=markup-price></div>
     </div>
+    <p></p>
     <div class=pink-tax>
         <div id="has-pink-tax"></div>
     </div>
