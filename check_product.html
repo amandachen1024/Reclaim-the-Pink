@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="check_product.js"></script>
+
+    <title>Check Your Product</title>
+</head>
+<body>
+    <h1>Check Your Product</h1>
+    <div class="type">
+        What type of product are you buying? 
+        <div class="product-types">
+            <button class="product-type" id="Shampoo" onclick="getProductType(this)">Shampoo</button>
+            <button class="product-type" id="Conditioner" onclick="getProductType(this)">Conditioner</button>
+        </div>
+    </div>
+    <div class="rate">
+        Rate the price of your product:
+        <div class="quality-types">
+            <button class="quality-type" id="Extremely-Below" onclick="getQuality(this)">Extremely Below Average</button>
+        </div>
+    </div>
+    <div class="price">
+        What is the price of your product?
+        <input id ="product-price" type=number placeholder="Enter your price here">
+        <button id="submit" onclick="checkProduct()">Submit</button>
+    </div>
+    <div class=average>
+        The average price is: <div id=average-price></div>
+    </div>
+    <div class=markup>
+        The markup from average is: <div id=markup-price></div>
+    </div>
+    <div class=pink-tax>
+        The probability your product has the Pink tax is: <div id="pink-tax'probability"></div>
+    </div>
+</body>
+</html>
