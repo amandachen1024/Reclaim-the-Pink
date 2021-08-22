@@ -71,24 +71,25 @@ nav > ul > li > a {
 #reclaim-the-pink{
     color: #FF5190;
     font-weight:900;
+    font-size: 60px;;
 }
 
 .slogan{
     width: 500px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 10px;
     font-style: normal;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 36px;
     line-height: auto;
     text-align: center;
 }
 
 .sub-slogan{
     width: 450px;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-left: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -114,15 +115,9 @@ button{
     margin: auto;
     margin-bottom: 35px;
 }
-#sign-up{
-    margin-right: 25px;
-}
-#login{
-    margin-left: 25px;
-}
 
 .bill-img{
-    height: 315px;
+    height: 350px;
     margin: auto;
 }
 
@@ -136,10 +131,11 @@ button{
 }
 
 .woman-shopping-img{
-    height: 330;
-    margin-top: 50px;
+    height: 500px;
+    margin-top: 25px;
     
 }
+
 
 .pink-tax-header{
     font-style: normal;
@@ -147,7 +143,7 @@ button{
     font-size: 48px;
     line-height: 76px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .pink-tax-info{
