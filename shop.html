@@ -6,11 +6,17 @@
 
     <link rel="stylesheet" href="shop.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
+    <script src="chat.js"></script>
     
 
     <title>Shop Local</title>
 </head>
-<body>
+<body class="background">
     <div class="menu-bar">
         <header>
             <div class="menu-container">
@@ -48,6 +54,49 @@
             <div class="text-odd">
                 <div class="header">Antónia Angela, owner of Artemis</div>
                 <div class="description">Artemis is a handcrafted haircare product brand that uses high-quality natural ingredients to create soap designed for the amazing lives of woman around the world.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible" onclick="toggleCollapsible(this)">Contact Us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>How may I help you?</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Click arrow to send message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                 
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

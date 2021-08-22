@@ -1,9 +1,11 @@
 body{
     font-family: 'Saira Condensed', sans-serif;
-    background-color: #ff9494;
     color: white;
 }
 
+.background{
+    background-color: #E4AEAE;
+}
 
 .menu-bar{
     background-color: #322F2F;

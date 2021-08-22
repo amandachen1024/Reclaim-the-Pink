@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="faq.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     <script src="faq.js"></script>
+
+   
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
+    <script src="chat.js"></script>
     
 
     <title>Reclaim the Pink</title>
 </head>
-<body>
+<body class="background">
     <div class="menu-bar">
         <header>
             <div class="menu-container">
@@ -30,14 +41,73 @@
     
     <h1 class="page-header">Frequently Asked Questions</h1>
     <div class="dropdown-faq">
-        <button class="question" onclick="dropdownToggle(this)">Question 1</button>
+        <button class="question" onclick="dropdownToggle(this)">What is the pink tax?</button>
         <div class="answer-panel">
-            <p>Answer 1</p>
+            <p>The pink tax refers to the extra amount women pay daily as consumers. Although these products are often the same but with different packaging, the price discrepancies show a pattern of gender-based pricing.</p>
         </div>
-        <button class="question" onclick="dropdownToggle(this)">Question 2</button>
+        <button class="question" onclick="dropdownToggle(this)">How do I know if my product is affected by the pink tax?</button>
         <div class="answer-panel">
-            <p>Answer 2</p>
+            <p>Through using our website’s “Check” feature, we can see if your product is marked above, below, or approximately the same as other uni-sex marketed products!</p>
+        </div>
+        <button class="question" onclick="dropdownToggle(this)">How can I avoid the pink tax?</button>
+        <div class="answer-panel">
+            <p>By verifying your product doesn’t have gender-based pricing or purchasing products from local, women-owned businesses, you can avoid the pink tax and reclaim the pink!</p>
+        </div>
+        <button class="question" onclick="dropdownToggle(this)">How can I be featured in the local businesses section?</button>
+        <div class="answer-panel">
+            <p>By clicking the “Feature Me!” button on the home page, you can feature your local, women-owned business and provide an alternative to “pink-tax affected” products!</p>
+        </div>
+        <button class="question" onclick="dropdownToggle(this)">What next steps are you guys taking with this website?</button>
+        <div class="answer-panel">
+            <p>We are planning to implement an app for Reclaim the Pink with a product scanner, expand our locations, and feature more “pink-tax affected” products.</p>
+        </div>
+        <button class="question" onclick="dropdownToggle(this)">How can we contact you?</button>
+        <div class="answer-panel">
+            <p>You can email us at hello@reclaimthepink.ca with any questions, concerns, or feedback, or use our chatbot to pass us on a message.</p>
         </div>
     </div>  
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible" onclick="toggleCollapsible(this)">Contact Us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>How may I help you?</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Click arrow to send message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                 
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
